@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickLeClown</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1>Clique sur le Clown !</h1>
+        <audio id="boingSound" src="./assets/sound/boing-6222.mp3" style="display: none"></audio>
+        <div id="startMenu">
+            <article>
+                <h2>Règles du jeu</h2>
+                <p>Vous avez 30 secondes pour cliquer un maximum de fois sur le clown qui apparait.</p>
+                <p>Le clown change de position régulièrement, selon la difficulté selectionnée, ou à chaque clique effectué.</p>
+                <p>Faites lui mal !</p>
+            <button id="startButtonEasy">Facile</button>
+            <button id="startButtonMedium">Moyen</button>
+            <button id="startButtonHard">Difficile</button>
+        </article>
+        </div>
+
+        <div id="currentScore">
+            <p>Score actuel : <span id="cScore"></span> </p>
+        </div>
+        <div id="gameArea">
+            <button id="movingButton">
+                <img src="./assets/images/Clown.webp" alt="Image du Clown à cliquer">
+            </button>
+        </div>
+
+        <div id="FinalScore">
+            <p>Vous avez marqué <span id="score"></span> points.</p>
+            <button id="restart">Recommencer</button>
+        </div>
+
+    </main>
+    <footer></footer>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>
